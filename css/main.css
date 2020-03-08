@@ -1,0 +1,157 @@
+/**** BASE STYles *****/
+
+@font-face {
+  font-family: "arial";
+}
+
+body {
+  font-family: 'Comic Sans', serif;
+  color: #ffffff;
+  background-color: #000000;
+  margin-left: 20px;
+}
+
+/***** Grid *****/
+
+.full-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+.half-width {
+  width: 600px;
+  float: left;
+}
+.third-width {
+  width: 400px;
+  float: left;
+}
+
+
+#portfolio {
+  height: 1250px;
+}
+#about {
+  height: 550px;
+}
+#contact {
+  height: 300px;
+}
+/***** HEADER CSS*****/
+
+.main-image h2 {
+  font-family: monospace;
+  font-size: 35px;
+  width: 400px;
+  text-align: left;
+  line-height: 50px;
+  padding-top: 250px;
+}
+.main-image span {
+  color: #ffbf00;
+}
+header {
+  height: 600px;
+  background: url('../img/macbook-pro.jpeg');
+  background-size: cover;
+}
+
+header h1 {
+  font-family: 'Spartan', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+header h1 span {
+  font-family: 'Fredoka One', cursive;
+  color: #cc99ff;
+  font-size: 25px;
+}
+
+nav {
+  float: right;
+  padding: 75px 25px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font size: 30px;
+  text-transform: lowercase;
+  padding-left: 50px;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: 'arial';
+
+}
+
+/***** MAIN CSS *****/
+#portfolio {
+
+}
+
+#portfolio .full-width h3 {
+  font-family: 'Montserrat', seriff;
+  font-size: 30px;
+  text-align: center;
+  color: #ff66cc;
+  text-decoration: none;
+}
+#portfolio img {
+  border: 2px #fffff solid;
+}
+
+#portfolio img:hover {
+  opacity: 1.0
+}
+.full-width#project-one, .full-width#project-two, .full-width#project-three {
+  height: 315px;
+  padding: 35px 0;
+}
+
+#about {
+  background: url('../img/about-me.png');
+  background-size: cover;
+
+}
+#about h3 {
+color: #9966ff;
+text-align: center;
+font-size: 30px;
+font-family: 'Montserrat', seriff;
+}
+#about .half-width {
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+/***** FOOTER CSS *****/
+
+#contact {
+  text-align: center;
+  float: left;
+}
+
+#contact h5 {
+  font-family: 'Montserrat', serrif;
+  font-size: 25px;
+
+}
+#contact ul{
+  display: inline;
+}
+#contact ul li {
+  display: inline-block;
+}
+#contact p {
+  font-family: 'Spartan', sans-serif;
+  font-size: 16px;
+}
+#contact .media {
+
+}
+#contact .address {
+
+}
