@@ -30,6 +30,9 @@ body {
 #portfolio {
   height: 1250px;
 }
+#projects {
+  height: 300px;
+}
 #about {
   height: 550px;
 }
@@ -40,18 +43,18 @@ body {
 
 .main-image h2 {
   font-family: monospace;
-  font-size: 35px;
+  font-size: 45px;
   width: 400px;
   text-align: left;
   line-height: 50px;
   padding-top: 250px;
 }
 .main-image span {
-  color: #ffbf00;
+  color: #f95e01;
 }
 header {
   height: 600px;
-  background: url('../img/macbook-pro.jpeg');
+  background: url('../img/apple.png');
   background-size: cover;
 }
 
@@ -61,9 +64,9 @@ header h1 {
   color: #ffffff;
 }
 header h1 span {
-  font-family: 'Fredoka One', cursive;
+  font-family: 'Fredoka+One', cursive;
   color: #cc99ff;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 nav {
@@ -88,16 +91,30 @@ nav ul li a {
 }
 
 /***** MAIN CSS *****/
-#portfolio {
-
-}
 
 #portfolio .full-width h3 {
   font-family: 'Montserrat', seriff;
   font-size: 30px;
   text-align: center;
-  color: #ff66cc;
+  color: #5abef7;
   text-decoration: none;
+}
+#portfolio .half-width h4{
+  font-family: 'Montserrat', seriff;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+
+}
+#portfolio .half-width h5 {
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+#portfolio .half-width p {
+  font-size: 18px;
+  text-align: center;
+  color: #ffffff;
 }
 #portfolio img {
   border: 2px #fffff solid;
@@ -110,6 +127,16 @@ nav ul li a {
   height: 315px;
   padding: 35px 0;
 }
+
+#projects .full-width h3 {
+  font-family: 'Montserrat', seriff;
+  font-size: 30px;
+  text-align: center;
+  color: #5abef7;
+  text-decoration: none;
+}
+
+
 
 #about {
   background: url('../img/about-me.png');
@@ -128,7 +155,36 @@ font-family: 'Montserrat', seriff;
 }
 
 /***** FOOTER CSS *****/
+#contact .full-width h3 {
+  font-family: 'Montserrat', seriff;
+  font-size: 30px;
+  text-align: center;
+  color: #ff66cc;
+  text-decoration: none;
+}
 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+
+}
 #contact {
   text-align: center;
   float: left;
