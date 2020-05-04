@@ -25,7 +25,18 @@ body {
   width: 400px;
   float: left;
 }
-
+.image-border{
+  border-color: white;
+  border-width: 5px;
+  border-radius: 5px;
+  border-style: solid;
+}
+.icon-border {
+  border-color: white;
+  border-width: 5px;
+  border-radius: 50%;
+  border-style: solid;
+}
 
 #portfolio {
   height: 1250px;
@@ -56,22 +67,32 @@ header {
   height: 600px;
   background: url('../img/apple.png');
   background-size: cover;
+
 }
 
 header h1 {
   font-family: 'Spartan', sans-serif;
   font-size: 20px;
   color: #ffffff;
+  position: fixed;
+  z-index: 2;
 }
 header h1 span {
   font-family: 'Fredoka+One', cursive;
   color: #cc99ff;
   font-size: 40px;
+  background-color: #fff;
 }
 
 nav {
   float: right;
-  padding: 75px 25px;
+  padding: 5px 45px 5px 0px;
+  position: fixed;
+  right: 20px;
+  top: 65px;
+  background-color: #ffffff;
+  opacity: .9;
+
 }
 
 nav ul li {
@@ -80,7 +101,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: #000000;
   font size: 30px;
   text-transform: lowercase;
   padding-left: 50px;
@@ -116,16 +137,17 @@ nav ul li a {
   text-align: center;
   color: #ffffff;
 }
-#portfolio img {
-  border: 2px #fffff solid;
-}
 
-#portfolio img:hover {
-  opacity: 1.0
+
+#portfolio a:hover {
+  opacity: 0.5;
+  color: white;
 }
 .full-width#project-one, .full-width#project-two, .full-width#project-three {
   height: 315px;
   padding: 35px 0;
+  position: relative;
+  right: 10px;
 }
 
 #projects .full-width h3 {
@@ -134,9 +156,17 @@ nav ul li a {
   text-align: center;
   color: #5abef7;
   text-decoration: none;
+
 }
+#projects a:hover {
+  opacity: 0.5;
+  color: white;
+}
+#projects .third-width {
+position: relative;
+left: 50px;
 
-
+}
 
 #about {
   background: url('../img/about-me.png');
@@ -162,7 +192,7 @@ font-family: 'Montserrat', seriff;
   color: #ff66cc;
   text-decoration: none;
 }
-
+ /*
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -185,6 +215,7 @@ input[type=button] {
   text-transform: uppercase;
 
 }
+*/
 #contact {
   text-align: center;
   float: left;
@@ -205,8 +236,13 @@ input[type=button] {
   font-family: 'Spartan', sans-serif;
   font-size: 16px;
 }
-#contact .media {
-
+#envelope a:hover {
+  opacity: .5;
+  color: black;
+}
+#contact .media a:hover {
+opacity: .5;
+color: white;
 }
 #contact .address {
 
