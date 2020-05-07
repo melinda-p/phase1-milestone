@@ -1,13 +1,16 @@
 /**** BASE STYles *****/
-
+* {
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: "arial";
 }
 
 body {
   font-family: 'Comic Sans', serif;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
   margin-left: 20px;
 }
 
@@ -51,7 +54,7 @@ body {
   height: 300px;
 }
 /***** HEADER CSS*****/
-
+/*
 .main-image h2 {
   font-family: monospace;
   font-size: 45px;
@@ -60,20 +63,34 @@ body {
   line-height: 50px;
   padding-top: 250px;
 }
+*/
+/*
 .main-image span {
-  color: #f95e01;
+  color: #9fd6f6;
+}
+*/
+.main-image img {
+  width: 100%;
+  height: auto;
+
 }
 header {
-  height: 600px;
-  background: url('../img/apple.png');
+/*  width: 100%;
+  height: auto;
+ background: url('../img/apple.png');
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+
+
 
 }
 
 header h1 {
   font-family: 'Spartan', sans-serif;
   font-size: 20px;
-  color: #ffffff;
+  color: #000000;
   position: fixed;
   z-index: 2;
 }
@@ -81,7 +98,8 @@ header h1 span {
   font-family: 'Fredoka+One', cursive;
   color: #cc99ff;
   font-size: 40px;
-  background-color: #fff;
+  background-color: #ffffff;
+  background: linear-gradient(180deg, #fff, #9fd6f6)
 }
 
 nav {
@@ -92,6 +110,7 @@ nav {
   top: 65px;
   background-color: #ffffff;
   opacity: .9;
+  background: linear-gradient(45deg, #fff, #cc99ff);
 
 }
 
@@ -117,25 +136,28 @@ nav ul li a {
   font-family: 'Montserrat', seriff;
   font-size: 30px;
   text-align: center;
-  color: #5abef7;
+  color: #cc99ff;
   text-decoration: none;
 }
 #portfolio .half-width h4{
   font-family: 'Montserrat', seriff;
   font-size: 25px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
+  margin-top: 40px;
 
 }
 #portfolio .half-width h5 {
   font-size: 20px;
+  line-height: 60px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 #portfolio .half-width p {
   font-size: 18px;
+  line-height: 30px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -154,8 +176,9 @@ nav ul li a {
   font-family: 'Montserrat', seriff;
   font-size: 30px;
   text-align: center;
-  color: #5abef7;
+  color: #cc99ff;
   text-decoration: none;
+  margin-bottom: 20px;
 
 }
 #projects a:hover {
@@ -168,20 +191,63 @@ left: 50px;
 
 }
 
+/*
 #about {
   background: url('../img/about-me.png');
   background-size: cover;
+  */
+  #about .full-width {
+    color: #cc99ff;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', seriff;
+  }
 
-}
+/*    background: url('../img/jake-unsplash.jpg');
+background-size: cover;
+background-position: center;
+min-height: 500px;
+display: flex;
+justify-content: center;
+flex-flow: row wrap; */
+
+  #about .half-width img {
+    width: 40%;
+    height: auto;
+  margin-top: 50px;
+    padding-left: 70px;
+  }
+/*  #about .half-width {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+
 #about h3 {
 color: #9966ff;
 text-align: center;
 font-size: 30px;
 font-family: 'Montserrat', seriff;
 }
-#about .half-width {
+*/
+/*
+#about-me{
   font-size: 20px;
   padding-left: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+*/
+#about .half-width p {
+  margin-top: 50px;
+  margin-right: 70px;
+  color: #000000;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 40px;
 }
 
 /***** FOOTER CSS *****/
@@ -224,6 +290,7 @@ input[type=button] {
 #contact h5 {
   font-family: 'Montserrat', serrif;
   font-size: 25px;
+  line-height: 60px;
 
 }
 #contact ul{
